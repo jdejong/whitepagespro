@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.description = "This gem is for interacting with version 3.0 of the Whitepages Pro API"
   s.authors     = ["Jonathan De Jong"]
   s.email       = ''
-  s.files       = ["lib/whitepagespro.rb"]
+  s.files       = Dir['lib/**/*.rb'] #["lib/whitepagespro.rb"]
   s.homepage    = 'http://rubygems.org/gems/whitepagespro'
   s.license     = 'MIT'
 end
