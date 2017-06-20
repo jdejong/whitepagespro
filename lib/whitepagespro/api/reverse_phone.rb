@@ -8,7 +8,7 @@ module WhitepagesPro
 
             def reverse_lookup(phone_number, options = {})
                 api_key = api_keys[:reverse_phone_api_key]
-                call('phone', :get, {phone: phone_number, api_key: api_key}.merge(options))
+                call('phone', API_VERSION, :get, {phone: phone_number, api_key: api_key}.merge(options))
             end
 
             def api_key_valid?

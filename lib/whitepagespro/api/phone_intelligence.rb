@@ -8,7 +8,7 @@ module WhitepagesPro
 
     		def intelligence_lookup(phone_number, options = {})
         		api_key = api_keys[:phone_intelligence_api_key]
-        		call('phone_intel', :get, {phone: phone_number, api_key: api_key}.merge(options))
+        		call('phone_intel', API_VERSION, :get, {phone: phone_number, api_key: api_key}.merge(options))
       		end
 
     		def api_key_valid?

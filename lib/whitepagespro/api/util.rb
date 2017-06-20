@@ -9,9 +9,9 @@ module WhitepagesPro
 
 			ROOT_URL = 'https://proapi.whitepages.com'
 
-			def call(path, type = :get, params = {})
+			def call(path, api_version = "3.0", type = :get, params = {})
 
-       			uri = URI.parse(build_url(path))
+       			uri = URI.parse(build_url(path, api_version))
 		        uri.query = URI.encode_www_form(params)
 
 		        http = Net::HTTP.new(uri.host, uri.port)
@@ -30,8 +30,8 @@ module WhitepagesPro
         		JSON.parse(response.body)
 			end
 
-			def build_url(path)
-				"#{ File.join(ROOT_URL, API_VERSION, path) }"
+			def build_url(path, api_version)
+				"#{ File.join(ROOT_URL, api_version, path) }"
 			end
 
 			def phone_number_valid?(phone_number)

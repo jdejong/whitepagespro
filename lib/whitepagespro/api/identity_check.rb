@@ -8,7 +8,7 @@ module WhitepagesPro
 
     		    def identity_check(options = {})
         		    api_key = api_keys[:identity_check]
-        		    call('phone_intel', :get, {api_key: api_key}.merge(options))
+        		    call('phone_intel', API_VERSION, :get, {api_key: api_key}.merge(options))
       		  end
 
     		    def api_key_valid?
