@@ -22,11 +22,11 @@ Or install it yourself as:
 You can pass configuration options as a block to WhitepagesPro.configure.
 
     WhitepagesPro.configure do |config|
-	    config.reverse_phone_api_key = "" #
-	    config.phone_intelligence_api_key = "" #
-      config.identity_check_api_key = "" #
-      config.phone_reputation_api_key = "" #
-      config.find_person_api_key = "" #
-      config.reverse_address_api_key = "" #
-      config.lead_verify_api_key = "" #
+	config.reverse_phone_api_key = "" #
+	config.phone_intelligence_api_key = "" #
+      	config.identity_check_api_key = "" #
+      	config.phone_reputation_api_key = "" #
+      	config.find_person_api_key = "" #
+      	config.reverse_address_api_key = "" #
+      	config.lead_verify_api_key = "" #
     end
